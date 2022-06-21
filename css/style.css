@@ -180,7 +180,9 @@ body {
         padding-bottom: 40px;
         z-index: 2;
     }
-
+    .feature-item:nth-of-type(3) .feature-item-main {
+        margin-bottom: 90px;
+    }
     .feature-item:nth-of-type(even) .feature-item-main {
         margin-left: 66.6666%;
     }
@@ -193,7 +195,7 @@ body {
 
         z-index: 1;
     }
-
+    
     .feature-item-image-shadow {
         width: 440px;
         height: 290px;
