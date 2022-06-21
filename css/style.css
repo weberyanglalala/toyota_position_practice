@@ -53,6 +53,7 @@ body {
 
 .feature-item-main-text {
     font-size: 16px;
+    font-weight: 300;
     color: var(--white-color);
 }
 
@@ -74,7 +75,6 @@ body {
 
     font-size: 60px;
     color: var(--primary-color);
-    background-color: var(--tertiary-color);
 }
 
 .feature-item-footer {
@@ -135,25 +135,44 @@ body {
 
     .feature-item {
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
     .feature-item-header {
-        display: inline-block;
-        width: 355px;
-    }
+        width: 33.33333%;
+        position: relative;
 
+        z-index: 1;
+    }
+    .feature-item:nth-of-type(even) .feature-item-header {
+        margin-left: 66.6666%;
+    }
+    .feature-item:nth-of-type(2) .feature-item-header .feature-item-h2-title::before {
+        content: "02";
+    }
+    .feature-item:nth-of-type(3) .feature-item-header .feature-item-h2-title::before {
+        content: "03";
+    }
+    .feature-item:nth-of-type(4) .feature-item-header .feature-item-h2-title::before {
+        content: "04";
+    }
+    .feature-item:nth-of-type(5) .feature-item-header .feature-item-h2-title::before {
+        content: "05";
+    }
     .feature-item-main {
         position: relative;
-        width: 355px;
+        width: 33.33333%;
         margin-bottom: 150px;
 
-        padding-bottom: 120px;
+        padding-bottom: 60px;
         z-index: 2;
+    }
+    .feature-item:nth-of-type(even) .feature-item-main {
+        margin-left: 66.6666%;
     }
 
     .feature-item-image {
-        width: 695px;
+        width: 66.6666%;
         position: absolute;
         top: 88px;
         left: 190px;
@@ -171,6 +190,11 @@ body {
 
         z-index: 0;
     }
+    .feature-item:nth-of-type(even) .feature-item-image-shadow {
+        top: 36px;
+        right: 120px;
+        z-index: 0;
+    }
 
     .feature-item-image i {
         top: 50%;
@@ -178,18 +202,19 @@ body {
         transform: translate(-50%, -50%);
         z-index: 5;
     }
-
+    .feature-item:nth-of-type(even) .feature-item-image i {
+        left: 0;
+    }
     .feature-item-footer {
         position: relative;
-        width: 700px;
+        width: 66.6666%;
         margin-left: 50px;
         z-index: 2;
     }
-
+    .feature-item:nth-of-type(even) .feature-item-footer {
+        margin-left: 33.3333%;
+    }
     .feature-item-caption::after {
         width: 70%;
-    }
-    .feature-item-link {
-        z-index: 10;
     }
 }
