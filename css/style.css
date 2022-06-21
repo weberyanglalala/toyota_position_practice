@@ -174,9 +174,10 @@ body {
     .feature-item-main {
         position: relative;
         width: 33.33333%;
-        margin-bottom: 150px;
+        height: 250px;
+        margin-bottom: 120px;
 
-        padding-bottom: 60px;
+        padding-bottom: 40px;
         z-index: 2;
     }
 
