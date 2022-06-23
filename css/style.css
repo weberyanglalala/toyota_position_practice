@@ -95,17 +95,17 @@ body {
     color: var(--secondary-color);
     position: relative;
 
+    display: flex;
+    align-items: center;
+   
     padding-bottom: 4px;
 }
-
-.feature-item-caption::after {
-    content: "";
-    background-color: var(--secondary-color);
-    position: absolute;
-    width: 50%;
+.feature-item-caption .line {
+    width: 0;
+    flex-grow: 1;
     height: 2px;
-    top: 10px;
-    left: 180px;
+    margin-left: 16px;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .feature-item-h4-title {
@@ -235,7 +235,4 @@ body {
         margin-left: 33.3333%;
     }
 
-    .feature-item-caption::after {
-        width: 70%;
-    }
 }
